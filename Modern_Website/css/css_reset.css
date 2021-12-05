@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    margin:0px;
+    padding:0px;
+    color:rgb(22, 22, 22);
+    font-family: 'Roboto', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+

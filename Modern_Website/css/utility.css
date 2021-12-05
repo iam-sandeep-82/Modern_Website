@@ -1,0 +1,102 @@
+
+body{
+  background-color: rgb(44, 43, 43);
+}
+
+.bg-black{
+  background:black;
+}
+
+.btn{
+  padding:0.6rem 1.5rem;
+  text-align: center;
+  color:var(--silver-white);
+}
+.btn-border{
+  border:solid 2px var(--silver-white);
+  background:none;
+  padding:0.4rem 1.4rem;
+  color:var(--white);
+  font-family:'verdana'
+}
+
+.text-title{
+  font-size:5rem
+}
+.bg-white{
+  background:solid 1.5px var(--silver-white);
+}
+
+.text-roboto{
+  font-family:'roboto'
+}
+.text-raleway{
+  font-family:'raleway'
+}
+.text-poppins{
+  font-family:'poppins'
+}
+.text-charcoal{
+  color:var(--charcoal);
+}
+.text-light-charcoal{
+  color:var(--light-charcoal);
+}
+.text-main{
+  color:var(--main);
+}
+
+
+.text-white{
+  color:var(--white);
+}
+.bg-white{
+  background:var(--white);
+}
+.bg-main{
+  background:var(--main);
+}
+.bg-charcoal{
+  color:var(--charcoal);
+}
+.border-main{
+  border:solid 2px var(--main) !important;
+}
+.card-bg-charcoal{
+  background:#333333;
+}
+
+.bg-soft-white{
+  background:var(--soft-white);
+}
+
+.fs-0_8{
+  font-size:0.8rem;
+}
+.fs-1_5{
+  font-size:1.5rem;
+}
+
+.mt-8{
+  margin-top:8rem;
+}
+
+.my-0_5{
+  margin:.1rem 0px;
+}
+
+.btn-main{
+  background:var(--main);
+  border-radius: 6px;
+  padding:0.6rem 1.5rem; color:white;
+}
+.w-15{
+  width:15%;
+}
+
+.active{
+  background:var(--main);
+}
+.not-active{
+  background:#333333;
+}

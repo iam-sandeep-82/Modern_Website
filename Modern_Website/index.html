@@ -1,0 +1,513 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- Root CSS -->
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/css_reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/utility.css">
+
+    <!-- Jquery -->
+    <script src="./js/jquery.js"></script>
+    <script src="./js/app.js"></script>
+
+    <!-- Bootstrap Jquery -->
+    <script src="./js/bootstrap.esm.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./js/bootstrap.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300&family=Raleway:wght@200;300;400;500&family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- AOS CDN  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Hover CSS -->
+    <link rel="stylesheet" href="css\Hover-master\css\hover.css">
+
+    <title>Website Prototype-1</title>
+
+  </head>
+  <body>
+
+    <!-- +++++++++++++++++++++++++++ HEADER START ++++++++++++++++++++++++++++++ -->
+
+    <header class="min-vh-100">
+
+
+      <!-- ++++++++++ HEADER LARGE SCREEN NAVBAR +++++++++++ -->
+      <!-- Dont take this as a REFERENCE -->
+
+      <div class="fluid-container bg-dark d-none d-sm-block">
+        <div class="container">
+          <div class="row main__header m-0 align-items-center justify-content-between">
+
+            <div class="col-lg-2 header__picture d-flex align-items-center">
+              <a href="#"><img src="./img/logo.png" alt="" srcset="" class="img-fluid"></a>
+            </div>
+
+
+            <div class="col-lg-8 d-none d-md-block header__nav--wrapper">
+              <nav class="navigation__links">
+                  <ul class="list-unstyled m-0 nav__lists d-flex align-items-center justify-content-end">
+                    <li class="nav__item"><a href="#page-1" class="links__text button hvr-bounce-to-bottom">Features</a></li>
+                    <li class="nav__item"><a href="#page-2" class="links__text button hvr-bounce-to-bottom">About</a></li>
+                    <li class="nav__item"><a href="#page-5" class="links__text button hvr-bounce-to-bottom">Pricing</a></li>
+                    <li class="nav__item"><a href="#page-6" class="links__text button hvr-bounce-to-bottom">Reviews</a></li>
+                    <li class="nav__item"><a href="#page-8" class="links__text button hvr-bounce-to-bottom">Contact</a></li>
+                  </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ++++++++++ HEADER MOBO-NAVBAR +++++++++++ -->
+
+      <div class="icon-wrapper position-fixed ms-3 mt-3 text-center d-block d-md-none" style="width:8rem; z-index:1001;" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button">
+        <div class="icon bg-dark rounded-circle d-flex align-items-center justify-content-center" style="height:35px; width:35px;">
+          <i class="fas fa-ellipsis-v text-light fa fs-5"></i>
+        </div>
+      </div>
+
+
+      <div class="navbar bg-dark d-block d-md-none nav-wrapper offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" style="width:75vw !important;">
+        <div class="container-fluid top-0 start-0 flex-column">
+
+            <div class="offcanvas-header icon bg-dark rounded-circle d-flex align-items-center justify-content-center" style="height:35px; width:35px;">
+              <i class="fas fa-times-circle text-light fa fs-5" data-bs-dismiss="offcanvas" aria-label="Close"></i>
+            </div>
+
+            <ul class="nav m-0 flex-column offcanvas-body">
+              <li><hr class="dropdown-divider text-light"></li>
+              <li class="nav-item text-center">
+                <a class="nav-link btn btn-ouline-primary button hvr-bounce-to-bottom text-uppercase" href="#">Home</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link btn btn-ouline-primary button hvr-bounce-to-bottom text-uppercase" href="#">About</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link btn btn-ouline-primary button hvr-bounce-to-bottom text-uppercase" href="#">Services</a>
+              </li>
+              <li class="nav-item text-center">
+                <a class="nav-link btn btn-ouline-primary button hvr-bounce-to-bottom text-uppercase" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- ++++++++++ HEADER SHOWCASE +++++++++++ -->
+
+      <div class="vh-100 landing__page border">
+        <div class="container mt-8">
+
+          <div class="landing__page--content row align-items-start justify-content-between">
+
+            <!-- ++++++++++ TEXT-CONTENT-AREA +++++++++++ -->
+
+              <div class="text__box text-start lh-lg col-lg-6 col-md-5 lh-lg p-2">
+                <h1 class="text-title"><strong class="text-white">AX</strong><span class="text-main">IT</span></h1>
+                
+                <div class="text_box--tagline-1">
+                  <h2 class="text-white text-raleway fw-light headline"></h2>
+                </div>
+
+                <div class="divider border rounded-pill bg-white my-lg-4 my-md-3" style="width:5rem; height:3px"></div>
+
+                <div class="text_box--tagline-2 col-lg-12">
+                  <h6 class="text-light-charcoal text-roboto fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eaque eveniet dolorum voluptatem! Neque voluptate excepturi sed dolorem, vero</h6>
+                </div>
+
+                <a href="#" class="btn-border mt-3 button border-3 hvr-underline-from-center">Download</a>
+              </div>
+
+              <!-- ++++++++++ USER TRIAL FORM +++++++++++ -->
+
+              <aside class="trial__form mb-5 p-0 col-lg-4 col-md-4 rounded border" data-aos="zoom-out" data-aos-duration="1400">
+                <form class="bg-light rounded">
+                  <div class="form__wrapper bg-white text-center rounded">
+                    <h5 class="container text-center bg-soft-white text-roboto fw-bold py-3">Try Your <span class="text-main">FREE</span> Trial Today</h5>
+                    <div class="container form__wrapper--inputs py-3">
+                      <input type="text" name="" id="" placeholder="Name">
+                      <input type="email" name="" id="" placeholder="Email">
+                      <input type="password" name="" id="" placeholder="Password">
+                    </div>
+                    <input type="submit" value="Get Started" class="bg-main text-white border-0 py-3 m-0 px-4 w-100">
+                  </div>
+                </form>
+              </aside>
+
+          </div>
+
+        </div>
+
+      </div>
+    </header>
+
+    <!-- +++++++++++++++++++++++++++ END HEADER ++++++++++++++++++++++++++++++ -->
+
+
+
+
+    <!-- +++++++++++++++++++++++++++ MAIN CONTENT ++++++++++++++++++++++++++++++ -->
+
+    <main>
+      <!-- ++++++++++++++++++++++ SECTION-1 +++++++++++++++++++++++++ -->
+
+      <section class="min-vh-100 bg-soft-white d-flex flex-column align-items-center justify-content-center" id="page-1">
+        <div class="container">
+          <div class="row align-items-center justify-content-between">
+            <div class="col-lg-1 col-md-1 col__tabs d-md-block d-none">
+              <div class="row list__tabs d-flex flex-column align-items-center justify-content-between">
+                <div class="tab col px-1 py-5 text-center text-white text-roboto fw-bold text-uppercase bg-main rounded-top">tab 1</div>
+                <div class="tab col my-0_5 px-0_5 py-5 text-center text-white text-roboto fw-bold text-uppercase not-active">tab 2</div>
+                <div class="tab col px-1 py-5 text-center text-white text-roboto fw-bold text-uppercase rounded-bottom not-active">tab 3</div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col__text__content align-items-start" data-aos="fade-right" data-aos-duration="1400">
+              <div class="text__content">
+                <h4 class="fw-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <div class="text__content--desc my-5">
+                  <p class="text-light-charcoal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero tempore id, tenetur nisi modi debitis itaque est accusamus dolor.lorem20Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nostrum iste nam dicta consequatur commodi?</p>
+                  <p class="text-light-charcoal">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                
+                <a href="#" class="btn-border border-0 btn-main hvr-icon-forward">Download <i class="fa fa-chevron-circle-right hvr-icon"></i></a>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-5 col__picture w-45 h-50">
+              <div class="col__picture__handler">
+                <img src="./img/page_2.png" alt="" srcset="" class="img-fluid" data-aos="zoom-in" data-aos-duration="1400">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ++++++++++++++++++++++ SECTION-2 +++++++++++++++++++++++++ -->
+
+      <section class="min-vh-100 bg-white d-flex flex-column align-items-center justify-content-center" id="page-2">
+        <div class="container">
+          <div class="row d-flex flex-row align-items-center justify-content-around">
+
+            <div class="col-lg-6 col-md-5 col__picture">
+              <div class="col__picture__handler">
+                <img src="./img/page_3.png" alt="" srcset="" class="img-fluid shadow-lg" data-aos="zoom-in" data-aos-duration="1400">
+              </div>
+            </div>
+
+
+            <div class="col-lg-5 col-md-7 col__text__content align-items-start" data-aos="fade-left" data-aos-duration="1400">
+              <div class="text__content">
+                <h4 class="fw-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <div class="border rounded-pill bg-main my-lg-4 my-md-3" style="width:5rem; height:4px"></div>
+
+                <div class="text__content--desc my-3">
+                  <p class="text-light-charcoal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero tempore id, tenetur nisi modi debitis itaque est accusamus dolor.lorem20Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nostrum iste nam dicta consequatur commodi?</p>
+                </div>
+
+                <div class="row text__content__action d-flex align-items-center justify-content-between">
+                  <img src="./img/upload_icon.png" alt="" srcset="" class="col-lg-2 col-md-2 img-fluid w-15">
+                  <div class="col-lg-10 col-md-10  text__content__action--desc">
+                    <h6>Title</h6>
+                    <p class="text-light-charcoal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ea, porro exercitationem</p>
+                  </div>
+                </div>
+
+                <div class="row text__content__action d-flex align-items-center justify-content-between">
+                  <img src="./img/download_icon.png" alt="" srcset="" class="col-lg-2 col-md-2 img-fluid w-15">
+                  <div class="col-lg-10 col-md-10  text__content__action--desc">
+                    <h6>Title</h6>
+                    <p class="text-light-charcoal">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis ea, porro exercitationem</p>
+                  </div>
+                </div>
+
+                
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- ++++++++++++++++++++++ SECTION-3 +++++++++++++++++++++++++ -->
+
+      <section class="min-vh-100 bg-soft-white d-flex flex-column align-items-center justify-content-center" id="page-3">
+        <div class="container">
+          <div class="row d-flex flex-row align-items-center justify-content-around">
+
+            <div class="col-lg-5 col-md-5 col__text__content align-items-start" data-aos="fade-right" data-aos-duration="1400">
+              <div class="text__content">
+                <h4 class="fw-bold">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</h4>
+                <div class="border rounded-pill bg-main my-lg-4 my-md-3" style="width:5rem; height:4px"></div>
+
+                <div class="text__content--desc my-3">
+                  <p class="text-light-charcoal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero tempore id, tenetur nisi modi debitis itaque est accusamus dolor.lorem20Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nostrum iste nam dicta consequatur commodi?</p>
+                  <p class="text-light-charcoal">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt vero tempore id, tenetur nisi modi debitis itaque est accusamus dolor.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col__picture text-end">
+              <div class="col__picture__handler">
+                <img src="./img/page_3.png" alt="" srcset="" class="img-fluid shadow-lg" data-aos="zoom-in" data-aos-duration="1400">
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ++++++++++++++++++++++ SECTION-4 +++++++++++++++++++++++++ -->
+
+      <section class="min-vh-100 bg-white d-flex flex-column align-items-center justify-content-center" id="page-4">
+        <div class="container">
+          
+          <div class="headline row d-flex flex-column align-items-center justify-content-between text-center">
+            <h1 class="text-raleway text-dark fw-light">WHY THIS IS AWESOME</h1>
+            <div class="bg-main my-3" style="width:5rem; height:3px"></div>
+            <h6 class="text-roboto my-3 text-light-charcoal">Lorem ipsum dolo  r sit amet consectetur adipisicing elit.</h6>
+          </div>
+          
+          <div class="details row list__cards d-flex flex-row align-items-center justify-content-around">
+              
+              <!-- ++++++++++ FIRST CARD +++++++++++ -->
+              
+              <div class="col-lg-4 card border-0 text-center d-flex flex-column align-items-center"  data-aos="zoom-in" data-aos-duration="1400">
+                <img src="./img/think_icon.png" alt="" srcset="" class="img-fluid w-15">
+                <h4 class="my-4 text-dark fw-bold text-roboto">Thoughtful Design</h4>
+                <h6 class="text-light-charcoal fw-light text-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolor deleniti illo id tempora, atque ea laborum consectetur eos placeat!</h6>  
+              </div>
+
+              <!-- ++++++++++ SECOND CARD +++++++++++ -->
+
+              <div class="col-lg-4 card border-0 text-center d-flex flex-column align-items-center"  data-aos="zoom-in" data-aos-duration="1400">
+                <img src="./img/flash_icon.png" alt="" srcset="" class="img-fluid w-15">
+                <h4 class="my-4 text-dark fw-bold text-roboto">Easy To Customize</h4>
+                <h6 class="text-light-charcoal fw-light text-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolor deleniti illo id tempora, atque ea laborum consectetur eos placeat!</h6>  
+              </div>
+
+              <!-- ++++++++++ THIRD CARD +++++++++++ -->
+
+              <div class="col-lg-4 card border-0 text-center d-flex flex-column align-items-center"  data-aos="zoom-in" data-aos-duration="1400">
+                <img src="./img/key_icon.png" alt="" srcset="" class="img-fluid w-15">
+                <h4 class="my-4 text-dark fw-bold text-roboto">Well Crafted</h4>
+                <h6 class="text-light-charcoal fw-light text-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolor deleniti illo id tempora, atque ea laborum consectetur eos placeat!</h6>  
+              </div>
+
+          </div>
+        </div>
+      </section>
+
+
+      <!-- ++++++++++++++++++++++ SECTION-5 +++++++++++++++++++++++++ -->
+
+      <section class="min-vh-100 bg-soft-white d-flex flex-column align-items-center justify-content-center" id="page-5">
+        <div class="container">
+          
+          <div class="headline row d-flex flex-column align-items-center justify-content-between text-center">
+            <h1 class="text-raleway text-dark fw-light text-uppercase">Pricing Options</h1>
+            <div class="bg-main my-3" style="width:5rem; height:3px"></div>
+            <h6 class="text-roboto my-3 text-light-charcoal">Lorem ipsum dolo  rsit amet consectetur adipisicing elit.</h6>
+          </div>
+          
+          <div class="details my-4 row list__cards d-flex flex-row align-items-end justify-content-around">
+
+              <!-- ++++++++++ FIRST CARD +++++++++++ -->
+              
+              <div class="col-lg-4 col-md-3 p-0 card bg-transparent border-0 text-center d-flex flex-column align-items-center" data-aos="flip-left" data-aos-duration="1400">
+                <div class="card-content rounded-0 border-0">
+                  <div class="w-100 text-center text-white text-roboto text-bold card-bg-charcoal rounded-0 py-3 text-poppins fw-bold">Basic</div>
+                  <div class="w-100 border border-light"></div>
+                  <div class="card-body m-0 p-0 rounded-0">
+                    <img src="./img/pricing_1.PNG" class="card-img-top rounded-0" alt="...">
+                  </div>
+                  <div class="w-100 border border-main"></div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">An item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A second item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A third item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">An item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A second item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A third item</li>
+                  </ul>
+                </div>  
+              </div>
+
+              <!-- ++++++++++ SECOND CARD +++++++++++ -->
+              
+              <div class="col-lg-4 col-md-3 p-0 card bg-transparent border-0 text-center d-flex flex-column align-items-center" data-aos="flip-left" data-aos-duration="1400">
+                <div class="card-content rounded-0 border-0">
+                  <div class="w-100 text-center text-white text-roboto text-bold card-bg-charcoal rounded-0 py-3 text-poppins fw-bold">Professional</div>
+                  <div class="w-100 border border-light"></div>
+                  <div class="card-body m-0 p-0 rounded-0">
+                    <img src="./img/pricing_2.PNG" class="card-img-top rounded-0" alt="...">
+                  </div>
+                  <div class="w-100 border bg-main py-2 fw-bold text-uppercase text-white text-poppins">
+                    Our Most Popular
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">An item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A second item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A third item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">An item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A second item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A third item</li>
+                  </ul>
+                </div>  
+              </div>
+              
+              <!-- ++++++++++ THIRD CARD +++++++++++ -->
+
+              <div class="col-lg-4 col-md-3 p-0 card bg-transparent border-0 text-center d-flex flex-column align-items-center" data-aos="flip-left" data-aos-duration="1400">
+                <div class="card-content rounded-0 border-0">
+                  <div class="w-100 text-center text-white text-roboto text-bold card-bg-charcoal rounded-0 py-3 text-poppins fw-bold">Enterprise</div>
+                  <div class="w-100 border border-light"></div>
+                  <div class="card-body m-0 p-0 rounded-0">
+                    <img src="./img/pricing_3.PNG" class="card-img-top rounded-0" alt="...">
+                  </div>
+                  <div class="w-100 border border-main"></div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">An item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A second item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A third item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">An item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A second item</li>
+                    <li class="list-group-item border-bottom text-soft-white text-uppercase text-poppins text-muted">A third item</li>
+                  </ul>
+                </div>  
+              </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- ++++++++++++++++++++++ SECTION-6 +++++++++++++++++++++++++ -->
+
+       <section class="min-vh-100 bg-white d-flex flex-column align-items-center justify-content-center" id="page-6">
+        <div class="container">
+          
+          <div class="headline row d-flex flex-column align-items-center justify-content-between text-center">
+            <h1 class="text-raleway text-dark fw-light text-uppercase">What Our Customers are saying</h1>
+            <div class="bg-main my-3" style="width:5rem; height:3px"></div>
+            <h6 class="text-roboto my-3 text-light-charcoal">Lorem ipsum dolo  rsit amet consectetur adipisicing elit.</h6>
+          </div>
+          
+          <div class="details my-4 row list__cards d-flex flex-row align-items-end justify-content-around">
+
+            
+            <div class="col-lg-3 col-md-3 card p-2 border-0 d-flex flex-column align-items-start" data-aos="fade-up" data-aos-duration="1400">
+              <h6 class="text-light-charcoal fw-light text-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolor deleniti illo id tempora, atque ea laborum consectetur eos placeat!</h6>  
+              <img src="./img/user.png" alt="" srcset="" class="img-fluid w-25 my-2">
+            </div>
+
+            <div class="col-lg-3 col-md-3 card p-2 border-0 d-flex flex-column align-items-start" data-aos="fade-up" data-aos-duration="1400">
+              <h6 class="text-light-charcoal fw-light text-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolor deleniti illo id tempora, atque ea laborum consectetur eos placeat!</h6>  
+              <img src="./img/user.png" alt="" srcset="" class="img-fluid w-25 my-2">
+            </div>
+
+            <div class="col-lg-3 col-md-3 card p-2 border-0 d-flex flex-column align-items-start" data-aos="fade-up" data-aos-duration="1400">
+              <h6 class="text-light-charcoal fw-light text-roboto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur dolor deleniti illo id tempora, atque ea laborum consectetur eos placeat!</h6>  
+              <img src="./img/user.png" alt="" srcset="" class="img-fluid w-25 my-2">
+            </div>
+          </div>
+        </div>
+      </section>
+
+       <!-- ++++++++++++++++++++++ SECTION-7 +++++++++++++++++++++++++ -->
+
+       <section class="py-5 bg-soft-white d-flex flex-column align-items-center justify-content-center " id="page-7">
+        <div class="container">
+          <div class="headline row">
+            <div class="col d-flex flex-column align-items-center justify-content-between text-center">
+              <h1 class="text-raleway text-dark fw-light text-uppercase text-white">Stylish Axure Design</h1>
+              <div class="bg-white rounded my-3" style="width:5rem; height:3px"></div>
+              <h6 class="text-raleway fw-lighter my-3 text-light-charcoal text-white">Lorem ipsum dolo  rsit amet consectetur adipisicing elit. rsit amet consectetur adipisicing elit.</h6>
+              <a href="#" class="btn-border my-3">Download</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+       <!-- ++++++++++++++++++++++ SECTION-8 +++++++++++++++++++++++++ -->
+
+       <section class="py-5 bg-soft-white d-flex flex-column align-items-center justify-content-center " id="page-8">
+        <div class="backdrop"></div>
+        <div class="container">
+          <div class="headline row">
+            <div class="col d-flex flex-column align-items-center justify-content-between text-center">
+              <h1 class="text-raleway text-dark fw-light text-uppercase text-dark">Contact us</h1>
+              <div class="bg-main my-3" style="width:5rem; height:3px"></div>
+              <h6 class="text-raleway fw-lighter my-3 text-light-charcoal text-dark">Lorem ipsum dolo  rsit amet consectetur adipisicing elit.</h6>
+            </div>
+          </div>
+
+          <div class="row contact__form text-center d-flex flex-row align-items-center justify-content-between">
+              <div class="col-lg-6">
+                    <input type="text" placeholder="Name">
+                    <input type="email" name="" id="" placeholder="Email">
+                    <input type="text" name="" id="" placeholder="Subject">
+              </div>
+              <div class="col-lg-6">
+                <textarea name="" id="" cols="10" rows="6"></textarea>
+              </div>
+              <div>
+                <a href="#" class="btn-border btn-main border-0 px-4">Send Message</a>
+              </div>
+              
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- +++++++++++++++++++++++++++ END-MAIN CONTENT ++++++++++++++++++++++++++++++ -->
+
+    <!-- +++++++++++++++++++++++++++ FOOTER-START ++++++++++++++++++++++++++++++ -->
+    <footer class="bg-black">
+      <div class="container">
+        <div class="row py-4 align-items-center justify-content-center">
+          <div class="col-lg-4 col-8">
+            <ul class="m-0 list-unstyled d-flex align-items-center justify-content-between text-center">
+              <li class="text-center"><a href="#"><i class="fa-brands fa-facebook fs-1_5 text-light-charcoal"></i></a></li>
+              <li class="text-center"><a href="#"><i class="fa-brands fa-twitter fs-1_5 text-light-charcoal"></i></a></li>
+              <li class="text-center"><a href="#"><i class="fa-brands fa-google-plus fs-1_5 text-light-charcoal"></i></a></li>
+              <li class="text-center"><a href="#"><i class="fa-brands fa-pinterest fs-1_5 text-light-charcoal"></i></a></li>
+              <li class="text-center"><a href="#"><i class="fa-brands fa-instagram fs-1_5 text-light-charcoal"></i></a></li>
+              <li class="text-center"><a href="#"><i class="fa-brands fa-facebook fs-1_5 text-light-charcoal"></i></a></li>
+              <li class="text-center"><a href="#"><i class="fa-solid fa-rss fs-1_5 text-light-charcoal"></i></a></li>
+            </ul>
+          </div>
+          <div class="mt-2 col-12 text-light-charcoal fs-0_8 fw-light text-raleway text-center">Created By Sandeep Singh</div>
+        </div>
+      </div>
+    </footer>
+    <!-- +++++++++++++++++++++++++++ END-FOOTER ++++++++++++++++++++++++++++++ -->
+
+  <!-- Typewriter SCRIPT -->
+  <script src="./js/typewriter_src/script.js"></script>
+     
+  <!-- AOS SCRIPT -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+  </body>
+</html>
